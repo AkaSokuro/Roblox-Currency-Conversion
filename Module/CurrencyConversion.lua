@@ -37,7 +37,7 @@ function CurrencyConversion:toRobux (Cash, Currency)
 	
 	if CurrencyRate[Currency] then Currency = CurrencyRate[Currency] end
 	
-	return Cash/CurrencyRate[Currency]
+	return Cash/Currency
 	
 end
 
