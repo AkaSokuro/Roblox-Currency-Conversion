@@ -22,7 +22,7 @@ local CurrencyRate = {
 local CurrencyConversion = {}
 
 -- print(CurrencyConversion:fromRobux(400), CurrencyConversion:fromRobux(400, 0.25))
--- 1, 100
+-- 5, 100
 function CurrencyConversion:fromRobux (Robux, Currency)
 	
 	if not Currency then Currency = DefaultCurrency end
