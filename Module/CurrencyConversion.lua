@@ -21,8 +21,6 @@ local CurrencyRate = {
 
 local CurrencyConversion = {}
 
--- print(CurrencyConversion:fromRobux(400), CurrencyConversion:fromRobux(400, 0.25))
--- 5, 100
 function CurrencyConversion:fromRobux (Robux, Currency)
 	
 	if not Currency then Currency = DefaultCurrency end
@@ -33,8 +31,6 @@ function CurrencyConversion:fromRobux (Robux, Currency)
 	
 end
 
--- print(CurrencyConversion:toRobux(5)
--- 400
 function CurrencyConversion:toRobux (Cash, Currency)
 	
 	if not Currency then Currency = DefaultCurrency end
