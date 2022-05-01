@@ -23,9 +23,7 @@ local CurrencyConversion = {}
 
 function CurrencyConversion:fromRobux (Robux, Currency)
 	
-	if not Currency then Currency = DefaultCurrency end
-	
-	if CurrencyRate[Currency] then Currency = CurrencyRate[Currency] end
+	Currency = CurrencyRate[Currency] or Currency or DefaultCurrency
 	
 	return Robux*Currency
 	
@@ -33,9 +31,7 @@ end
 
 function CurrencyConversion:toRobux (Cash, Currency)
 	
-	if not Currency then Currency = DefaultCurrency end
-	
-	if CurrencyRate[Currency] then Currency = CurrencyRate[Currency] end
+	Currency = CurrencyRate[Currency] or Currency or DefaultCurrency
 	
 	return Cash/Currency
 	
